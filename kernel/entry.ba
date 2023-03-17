@@ -1,0 +1,21 @@
+extern fun vga_putchar(char c, i32 x_pos, i32 y_pos)
+
+extern fun strlen(cstr str) -> i32
+
+fun barn_print(cstr cs) {
+    let string_length: int = strlen(cs)
+    let start_pos_x:   int = 0
+    let start_pos_y:   int = 0
+
+    for let i: int = 0; i < string_length; i++ {
+        __code__("vga_putchar(cs[i], start_pos_x, start_pos_y);")
+        start_pos_x++
+    }
+
+    __use__(string_length)
+    __use__(start_pos_y)
+}
+
+__code__("extern \"C\"") fun barn_kernel_entry() {
+    barn_print("Barn")
+}
