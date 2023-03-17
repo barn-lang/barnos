@@ -2,9 +2,6 @@
 Simple OS that is booting with GRUB written in Barn and a little bit of C
 # Video
 [Check out!](./2023-03-17_16-04-00(1).mp4)
-<video controls>
-  <source src="./2023-03-17_16-04-00(1).mp4" type="video/mp4">
-</video>
 # Build
 To build this crappy "os" you need to have these tools:
 - Barn Compiler
