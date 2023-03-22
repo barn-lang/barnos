@@ -16,6 +16,6 @@ fun barn_print(cstr cs) {
     __use__(start_pos_y)
 }
 
-__code__("extern \"C\"") fun barn_kernel_entry() {
+fun barn_kernel_entry() {
     barn_print("Barn")
 }
